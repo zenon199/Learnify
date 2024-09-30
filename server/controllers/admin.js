@@ -1,4 +1,7 @@
+
 import TryCatch from "../middlewares/tryCatch.js";
+import {Courses} from "../models/Courses.js";
+
 
 export const createCourse = TryCatch(async(req,res) => {
     const {title, description, category, createdBy, duration, price} = req.body;
