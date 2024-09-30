@@ -11,7 +11,7 @@ const schema = new mongoose.Schema({
         required: true,
     },
     image: {
-        trpe: String,
+        type: String,
         required: true,
     },
     price: {
@@ -19,7 +19,7 @@ const schema = new mongoose.Schema({
         required: true,
     },
     duration: {
-        type: String,
+        type: Number,
         required: true,
     },
     category: {
