@@ -47,7 +47,7 @@ export const register = TryCatch(async(req,res) => {
         activationToken,
     })
 
-    });
+});
 
 export const verifyUser = TryCatch(async(req,res) => {
     const {otp, activationToken} = req.body;
@@ -92,16 +92,16 @@ export const loginUser = TryCatch(async(req,res) => {
     if(!matchPassword)
      return res.status(400).json({
         message:"Wrong Password",
-});
+    });
 
-const token = jwt.sign({_id: user._id}, process.env.Jwt_Sec)
-    expiresIn: "15d",
+    const token = jwt.sign({_id: user._id}, process.env.Jwt_Sec)
+        expiresIn: "15d",
 
-res.json({
-    message: `Welcome back ${user.name}`,
-    token,
-    user,
-})
+    res.json({
+     message: `Welcome back ${user.name}`,
+        token,
+        user,
+    })
 
 });
 

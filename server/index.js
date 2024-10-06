@@ -9,8 +9,6 @@ const app = express();
 
 app.use(express.json());
 
-const port = process.env.PORT;
-
 app.use("/uploads", express.static("uploads"));
 
 
