@@ -10,6 +10,6 @@ router.post("/course/new", isAuth, isAdmin, uploadFiles, createCourse);
 router.post("/course/:id", isAuth, isAdmin, uploadFiles, addLectures);
 router.delete("/lecture/:id", isAuth, isAdmin, deleteLecture);
 router.delete("/course/:id", isAuth, isAdmin, deleteCourse);
-router.get("/stats", isAdmin, isAuth,getAllStats);
+router.get("/stats", isAdmin, isAuth, getAllStats);
 
 export default router;

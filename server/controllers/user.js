@@ -68,7 +68,6 @@ export const verifyUser = TryCatch(async(req,res) => {
     await User.create({
         name: verify.user.name,
         email: verify.user.email,
-        name: verify.user.name,
         password: verify.user.password,
     })
 
