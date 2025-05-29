@@ -23,7 +23,6 @@
 
 // export default Verify
 
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Verify = () => {
