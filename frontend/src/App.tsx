@@ -7,6 +7,9 @@ import Courses from './pages/Courses'
 import About from './pages/About'
 import Account from './pages/Account'
 import Footer from './components/Footer'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Verify from './pages/Verify'
 
 const App = () => {
   return (<>
@@ -17,6 +20,9 @@ const App = () => {
           <Route path='/courses' element={<Courses/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/account' element={<Account/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/register' element={<Register/>}/>
+          <Route path='/verify' element={<Verify/>}/>
         </Routes>
       <Footer/>
     </BrowserRouter>
